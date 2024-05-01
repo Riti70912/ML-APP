@@ -1,12 +1,12 @@
 import streamlit as st
-#from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 import datetime
 import pandas as pd
 from datetime import datetime
 import pickle
 
-#le = LabelEncoder()
+le = LabelEncoder()
 model = pickle.load(open('modelTuned.pkl','rb'))
 
 # Function to split date and time
