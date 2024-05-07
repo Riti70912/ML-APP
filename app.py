@@ -52,6 +52,13 @@ def get_weekday(date_obj):
     day_of_week_number = date_obj.weekday()
     return day_of_week_number
 
+# Streamlit app
+
+st.title("YouTube Video Popularity Predictor")
+
+
+# Input fields
+
 def features():
     feature = pd.DataFrame({
         "title": [title],
